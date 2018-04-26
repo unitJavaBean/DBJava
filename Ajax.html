@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>Markdown Preview</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+  
+  
+  <script src="preview_data/lib-2f63b3ba7c.js" type="text/javascript"></script>
+  
+  
+  <script src="preview_data/preview-c3331ab0f7.js" type="text/javascript"></script><style type="text/css">@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAZwABAAAAAACFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEU0lHAAAGaAAAAAgAAAAIAAAAAUdTVUIAAAZcAAAACgAAAAoAAQAAT1MvMgAAAyQAAABJAAAAYFYEU3RjbWFwAAADcAAAAEUAAACAAJThvmN2dCAAAATkAAAABAAAAAQAAAAAZnBnbQAAA7gAAACyAAABCUM+8IhnYXNwAAAGTAAAABAAAAAQABoAI2dseWYAAAFsAAABPAAAAZwcEq9taGVhZAAAAsgAAAA0AAAANgh4a91oaGVhAAADCAAAABoAAAAkCA8DRGhtdHgAAAL8AAAADAAAAAwGAACfbG9jYQAAAsAAAAAIAAAACABiATBtYXhwAAACqAAAABgAAAAgAA8ASm5hbWUAAAToAAABQgAAAlXu73sOcG9zdAAABiwAAAAeAAAAME3QpOBwcmVwAAAEbAAAAHYAAAB/aFGpk3jaTY6xa8JAGMW/O62BDi0tJLYQincXEypYIiGJjSgHniQ6umTsUEyLm5BV6NDBP8Tpts6F0v+k/0an2i+itHDw3v2+9+DBKTzsJNnWJNTgHEy4BgG3EMI9DCEDOGEXzDADU5hBKMIgNPZqoD3SilVaXZCER3/I7AtxEJLtzzuZfI+VVkprxTlXShWKb3TBecG11rwoNlmmn1P2WYcJczl32etSpKnziC7lQyWe1smVPy/Lt7Kc+0vWY/gAgIIEqAN9we0pwKXreiMasxvabDQMM4riO+qxM2ogwDGOZTXxwxDiycQIcoYFBLj5K3EIaSctAq2kTYiw+ymhce7vwM9jSqO8JyVd5RH9gyTt2+J/yUmYlIR0s04n6+7Vm1ozezUeLEaUjhaDSuXHwVRgvLJn1tQ7xiuVv/ocTRF42mNgZGBgYGbwZOBiAAFGJBIMAAizAFoAAABiAGIAznjaY2BkYGAA4in8zwXi+W2+MjCzMIDApSwvXzC97Z4Ig8N/BxYGZgcgl52BCSQKAA3jCV8CAABfAAAAAAQAAEB42mNgZGBg4f3vACQZQABIMjKgAmYAKEgBXgAAeNpjYGY6wTiBgZWBg2kmUxoDA4MPhGZMYzBi1AHygVLYQUCaawqDA4PChxhmh/8ODDEsvAwHgMKMIDnGL0x7gJQCAwMAJd4MFwAAAHjaY2BgYGaA4DAGRgYQkAHyGMF8NgYrIM3JIAGVYYDT+AEjAwuDFpBmA9KMDEwMCh9i/v8H8sH0/4dQc1iAmAkALaUKLgAAAHjaTY9LDsIgEIbtgqHUPpDi3gPoBVyRTmTddOmqTXThEXqrob2gQ1FjwpDvfwCBdmdXC5AVKFu3e5MfNFJ29KTQT48Ob9/lqYwOGZxeUelN2U2R6+cArgtCJpauW7UQBqnFkUsjAY/kOU1cP+DAgvxwn1chZDwUbd6CFimGXwzwF6tPbFIcjEl+vvmM/byA48e6tWrKArm4ZJlCbdsrxksL1AwWn/yBSJKpYbq8AXaaTb8AAHja28jAwOC00ZrBeQNDQOWO//sdBBgYGRiYWYAEELEwMTE4uzo5Zzo5b2BxdnFOcALxNjA6b2ByTswC8jYwg0VlNuoCTWAMqNzMzsoK1rEhNqByEyerg5PMJlYuVueETKcd/89uBpnpvIEVomeHLoMsAAe1Id4AAAAAAAB42oWQT07CQBTGv0JBhagk7HQzKxca2sJCE1hDt4QF+9JOS0nbaaYDCQfwCJ7Au3AHj+LO13FMmm6cl7785vven0kBjHCBhfpYuNa5Ph1c0e2Xu3jEvWG7UdPDLZ4N92nOm+EBXuAbHmIMSRMs+4aUEd4Nd3CHD8NdvOLTsA2GL8M9PODbcL+hD7C1xoaHeLJSEao0FEW14ckxC+TU8TxvsY6X0eLPmRhry2WVioLpkrbp84LLQPGI7c6sOiUzpWIWS5GzlSgUzzLBSikOPFTOXqly7rqx0Z1Q5BAIoZBSFihQYQOOBEdkCOgXTOHA07HAGjGWiIjaPZNW13/+lm6S9FT7rLHFJ6fQbkATOG1j2OFMucKJJsxIVfQORl+9Jyda6Sl1dUYhSCm1dyClfoeDve4qMYdLEbfqHf3O/AdDumsjAAB42mNgYoAAZQYjBmyAGYQZmdhL8zLdDEydARfoAqIAAAABAAMABwAKABMAB///AA8AAQAAAAAAAAAAAAAAAAABAAAAAA==) format('woff');
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #24292e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-smi,
+.markdown-body .pl-s .pl-s1 {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-s,
+.markdown-body .pl-pds,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sre,
+.markdown-body .pl-sr .pl-sra {
+  color: #032f62;
+}
+
+.markdown-body .pl-v,
+.markdown-body .pl-smw {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  color: #fafbfc;
+  background-color: #b31d28;
+}
+
+.markdown-body .pl-c2 {
+  color: #fafbfc;
+  background-color: #d73a49;
+}
+
+.markdown-body .pl-c2::before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  font-weight: bold;
+  color: #22863a;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  font-weight: bold;
+  color: #005cc5;
+}
+
+.markdown-body .pl-mi {
+  font-style: italic;
+  color: #24292e;
+}
+
+.markdown-body .pl-mb {
+  font-weight: bold;
+  color: #24292e;
+}
+
+.markdown-body .pl-md {
+  color: #b31d28;
+  background-color: #ffeef0;
+}
+
+.markdown-body .pl-mi1 {
+  color: #22863a;
+  background-color: #f0fff4;
+}
+
+.markdown-body .pl-mc {
+  color: #e36209;
+  background-color: #ffebda;
+}
+
+.markdown-body .pl-mi2 {
+  color: #f6f8fa;
+  background-color: #005cc5;
+}
+
+.markdown-body .pl-mdr {
+  font-weight: bold;
+  color: #6f42c1;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  text-decoration: underline;
+  color: #032f62;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: currentColor;
+}
+
+.markdown-body a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+}
+
+.markdown-body strong {
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body svg:not(:root) {
+  overflow: hidden;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .octicon {
+  vertical-align: text-bottom;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0 !important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px !important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px !important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px !important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px !important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px !important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px !important;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #6a737d;
+  border-left: 0.25em solid #dfe2e5;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: 0.875em;
+}
+
+.markdown-body h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: 0.25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+}
+
+.markdown-body code::before,
+.markdown-body code::after {
+  letter-spacing: -0.2em;
+  content: "\A0";
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code::before,
+.markdown-body pre code::after {
+  content: normal;
+}
+
+.markdown-body .full-commit .btn-outline:not(:disabled):hover {
+  color: #005cc5;
+  border-color: #005cc5;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.markdown-body :checked+.radio-label {
+  position: relative;
+  z-index: 1;
+  border-color: #0366d6;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.2em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/* Flowchart variables */
+/* Sequence Diagram variables */
+/* Gantt chart variables */
+.mermaid .label {
+  color: #333;
+}
+.node rect,
+.node circle,
+.node ellipse,
+.node polygon {
+  fill: #ECECFF;
+  stroke: #CCCCFF;
+  stroke-width: 1px;
+}
+.edgePath .path {
+  stroke: #333333;
+}
+.edgeLabel {
+  background-color: #e8e8e8;
+}
+.cluster rect {
+  fill: #ffffde !important;
+  rx: 4 !important;
+  stroke: #aaaa33 !important;
+  stroke-width: 1px !important;
+}
+.cluster text {
+  fill: #333;
+}
+.actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF;
+}
+text.actor {
+  fill: black;
+  stroke: none;
+}
+.actor-line {
+  stroke: grey;
+}
+.messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  marker-end: "url(#arrowhead)";
+  stroke: #333;
+}
+.messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: "2 2";
+  stroke: #333;
+}
+#arrowhead {
+  fill: #333;
+}
+#crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important;
+}
+.messageText {
+  fill: #333;
+  stroke: none;
+}
+.labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF;
+}
+.labelText {
+  fill: black;
+  stroke: none;
+}
+.loopText {
+  fill: black;
+  stroke: none;
+}
+.loopLine {
+  stroke-width: 2;
+  stroke-dasharray: "2 2";
+  marker-end: "url(#arrowhead)";
+  stroke: #CCCCFF;
+}
+.note {
+  stroke: #aaaa33;
+  fill: #fff5ad;
+}
+.noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+/** Section styling */
+.section {
+  stroke: none;
+  opacity: 0.2;
+}
+.section0 {
+  fill: rgba(102, 102, 255, 0.49);
+}
+.section2 {
+  fill: #fff400;
+}
+.section1,
+.section3 {
+  fill: white;
+  opacity: 0.2;
+}
+.sectionTitle0 {
+  fill: #333;
+}
+.sectionTitle1 {
+  fill: #333;
+}
+.sectionTitle2 {
+  fill: #333;
+}
+.sectionTitle3 {
+  fill: #333;
+}
+.sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px;
+}
+/* Grid and axis */
+.grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+/* Today line */
+.today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px;
+}
+/* Task styling */
+/* Default task */
+.task {
+  stroke-width: 2;
+}
+.taskText {
+  text-anchor: middle;
+  font-size: 11px;
+}
+.taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px;
+}
+.taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px;
+}
+/* Specific task settings for the sections*/
+.taskText0,
+.taskText1,
+.taskText2,
+.taskText3 {
+  fill: white;
+}
+.task0,
+.task1,
+.task2,
+.task3 {
+  fill: #8a90dd;
+  stroke: #534fbc;
+}
+.taskTextOutside0,
+.taskTextOutside2 {
+  fill: black;
+}
+.taskTextOutside1,
+.taskTextOutside3 {
+  fill: black;
+}
+/* Active task */
+.active0,
+.active1,
+.active2,
+.active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc;
+}
+.activeText0,
+.activeText1,
+.activeText2,
+.activeText3 {
+  fill: black !important;
+}
+/* Completed task */
+.done0,
+.done1,
+.done2,
+.done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2;
+}
+.doneText0,
+.doneText1,
+.doneText2,
+.doneText3 {
+  fill: black !important;
+}
+/* Tasks on the critical line */
+.crit0,
+.crit1,
+.crit2,
+.crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2;
+}
+.activeCrit0,
+.activeCrit1,
+.activeCrit2,
+.activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2;
+}
+.doneCrit0,
+.doneCrit1,
+.doneCrit2,
+.doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges;
+}
+.doneCritText0,
+.doneCritText1,
+.doneCritText2,
+.doneCritText3 {
+  fill: black !important;
+}
+.activeCritText0,
+.activeCritText1,
+.activeCritText2,
+.activeCritText3 {
+  fill: black !important;
+}
+.titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black;
+}
+/*
+
+
+*/
+.node text {
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px;
+}
+div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+@font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_SansSerif;src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_SansSerif;src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_SansSerif;src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:inline-block;text-align:initial}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;white-space:nowrap;text-indent:0;text-rendering:auto}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-html{display:inline-block}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .base{position:relative}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathit{font-family:KaTeX_Math;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr{font-family:KaTeX_Script}.katex .mathsf{font-family:KaTeX_SansSerif}.katex .mainit{font-family:KaTeX_Main;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%}.katex .mspace{display:inline-block}.katex .mspace.negativethinspace{margin-left:-.16667em}.katex .mspace.muspace{width:.055556em}.katex .mspace.thinspace{width:.16667em}.katex .mspace.negativemediumspace{margin-left:-.22222em}.katex .mspace.mediumspace{width:.22222em}.katex .mspace.thickspace{width:.27778em}.katex .mspace.sixmuspace{width:.333333em}.katex .mspace.eightmuspace{width:.444444em}.katex .mspace.enspace{width:.5em}.katex .mspace.twelvemuspace{width:.666667em}.katex .mspace.quad{width:1em}.katex .mspace.qquad{width:2em}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer,.katex .sizing{display:inline-block}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .accent>.vlist-t,.katex .op-limits>.vlist-t{text-align:center}.katex .accent .accent-body{width:0;position:relative}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;margin:0 -.125em;width:.25em;overflow:hidden;position:relative}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex .vertical-separator svg{width:.25em}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox{box-sizing:border-box;border:.04em solid #000}.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap+.mbin,.katex .cancel-lap+.mord,.katex .cancel-lap+.msupsub,.katex .mbin+.cancel-lap,.katex .mord+.cancel-lap{margin-left:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}
+@media print {
+  .markdown-body table {
+    overflow: visible !important;
+  }
+  .ui-layout-north,
+  .ui-layout-center,
+  .ui-layout-toggler {
+    display: none !important;
+  }
+  .ui-layout-east {
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: auto !important;
+    background: white !important;
+    overflow: visible !important;
+  }
+  .ui-layout-east .ui-layout-toggler {
+    display: none !important;
+  }
+  .ui-layout-east .markdown-body {
+    display: block !important;
+    padding: 20px !important;
+  }
+  .markdown-body pre > code {
+    word-break: normal;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.markdown-body {
+  min-width: 256px;
+  max-width: 978px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 14px;
+  tab-size: 4;
+  font-family: "-apple-system", BlinkMacSystemFont, "\5FAE\8F6F\96C5\9ED1", "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", SimSun, "\5B8B\4F53", Heiti, "\9ED1\4F53", sans-serif;
+}
+.markdown-body h1 {
+  font-size: 2.25em;
+}
+.markdown-body h2 {
+  font-size: 1.75em;
+}
+.markdown-body h3 {
+  font-size: 1.5em;
+}
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+.markdown-body h5,
+.markdown-body h6 {
+  font-size: 1em;
+}
+.markdown-body pre > code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, sans-serif;
+}
+.markdown-body pre > code .zh-hans {
+  font-family: 'Microsoft YaHei', '\5FAE\8F6F\96C5\9ED1', SimSun, sans-serif;
+}
+div.mermaid {
+  text-align: center;
+}
+hr.footnotes-sep {
+  margin: 64px 0 32px 0;
+  height: 1px;
+}
+.footnotes {
+  font-size: 90%;
+  padding-left: 16px;
+}
+li.footnote-item > p {
+  margin: 8px 0;
+}
+.success,
+.info,
+.warning,
+.danger {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.success > p:last-child,
+.info > p:last-child,
+.warning > p:last-child,
+.danger > p:last-child {
+  margin-bottom: 0;
+}
+.success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #777;
+}
+ul.table-of-contents {
+  list-style-type: none;
+}
+ul.table-of-contents li {
+  margin: 4px 0;
+}
+.markdown-body table {
+  width: auto;
+  display: table;
+}
+.markdown-body table td,
+.markdown-body table th {
+  word-break: break-all;
+}
+.markdown-body.ace_search .highlight pre,
+.markdown-body.ace_search pre {
+  overflow: visible !important;
+  width: fit-content !important;
+}
+</style>
+  
+</head>
+<body>
+  <article class="markdown-body"><h1 id="ajax" data-source-line="1"><a class="markdownIt-Anchor" href="#ajax"></a>Ajax</h1>
+<h2 id="什么是ajax" data-source-line="2"><a class="markdownIt-Anchor" href="#什么是ajax"></a>什么是Ajax</h2>
+<p data-source-line="3">AJAX = 异步 JavaScript 和 XML。</p>
+<p data-source-line="5">AJAX 是一种用于创建快速动态网页的技术。</p>
+<p data-source-line="7">通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<p data-source-line="9">传统的网页（不使用 AJAX）如果需要更新内容，必需重载整个网页面。</p>
+<p data-source-line="11"><strong>利用AJAX可以做：</strong></p>
+<pre data-source-line="13"><code class="hljs">注册时，输入用户名自动检测用户是否已经存在。
+登陆时，提示用户名密码错误
+删除数据行时，将行ID发送到后台，后台在数据库中删除，数据库删除成功后，在页面DOM中将数据行也删除。</code></pre><h2 id="xmlhttprequest-对象" data-source-line="17"><a class="markdownIt-Anchor" href="#xmlhttprequest-对象"></a>XMLHttpRequest 对象</h2>
+<blockquote data-source-line="18">
+<p>XMLHttpRequest 是 AJAX 的基础。</p>
+</blockquote>
+<h3 id="1-xmlhttprequest-对象" data-source-line="19"><a class="markdownIt-Anchor" href="#1-xmlhttprequest-对象"></a>1. XMLHttpRequest 对象</h3>
+<p data-source-line="21">所有现代浏览器均支持 XMLHttpRequest 对象（IE5 和 IE6 使用 ActiveXObject）。</p>
+<p data-source-line="23">XMLHttpRequest 用于在后台与服务器交换数据。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+<h3 id="2-创建-xmlhttprequest-对象" data-source-line="25"><a class="markdownIt-Anchor" href="#2-创建-xmlhttprequest-对象"></a>2. 创建 XMLHttpRequest 对象</h3>
+<blockquote data-source-line="27">
+<p>XMLHttpRequest 对象用于和服务器交换数据。</p>
+</blockquote>
+<p data-source-line="29">**为了应对所有的现代浏览器，包括 IE5 和 IE6，请检查浏览器是否支持 XMLHttpRequest 对象。如果支持，则创建 XMLHttpRequest 对象。如果不支持，则创建 ActiveXObject **</p>
+<ol data-source-line="31">
+<li>
+<p>创建 XMLHttpRequest 对象的语法：</p>
+<p><code>var iable=new XMLHttpRequest();</code></p>
+</li>
+<li>
+<p>老版本的 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象：</p>
+<p><code>var iable=new ActiveXObject("Microsoft.XMLHTTP");</code></p>
+</li>
+</ol>
+<h3 id="3-向服务器发送请求" data-source-line="38"><a class="markdownIt-Anchor" href="#3-向服务器发送请求"></a>3. 向服务器发送请求</h3>
+<h4 id="向服务器发送请求" data-source-line="39"><a class="markdownIt-Anchor" href="#向服务器发送请求"></a>向服务器发送请求</h4>
+<p data-source-line="40">如需将请求发送到服务器，我们使用 XMLHttpRequest 对象的 open() 和 send() 方法：</p>
+<pre data-source-line="42"><code class="hljs">xmlhttp.open(<span class="hljs-string">"<span class="hljs-keyword">GET</span>"</span>,<span class="hljs-string">"ajax_info.txt"</span>,true);
+xmlhttp.send();
+</code></pre><ol data-source-line="47">
+<li>
+<p>open(method,url,async)</p>
+<p>规定请求的类型、URL 以及是否异步处理请求。</p>
+<ul>
+<li>method：请求的类型；GET 或 POST</li>
+<li>url：文件在服务器上的位置,请求地址</li>
+<li>async：true（异步）或 false（同步）</li>
+</ul>
+</li>
+<li>
+<p>send(string)</p>
+<p>将请求发送到服务器。</p>
+<ul>
+<li>string：仅用于 POST 请求</li>
+</ul>
+</li>
+</ol>
+<h4 id="get-还是-post" data-source-line="59"><a class="markdownIt-Anchor" href="#get-还是-post"></a>GET 还是 POST？</h4>
+<p data-source-line="60">与 POST 相比，GET 更简单也更快，并且在大部分情况下都能用。</p>
+<p data-source-line="62">然而，在以下情况中，请使用 POST 请求：</p>
+<ul data-source-line="63">
+<li>无法使用缓存文件（更新服务器上的文件或数据库）</li>
+<li>向服务器发送大量数据（POST 没有数据量限制）</li>
+<li>发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠</li>
+</ul>
+<h3 id="4-服务器响应" data-source-line="67"><a class="markdownIt-Anchor" href="#4-服务器响应"></a>4. 服务器响应</h3>
+<h4 id="服务器响应" data-source-line="68"><a class="markdownIt-Anchor" href="#服务器响应"></a>服务器响应</h4>
+<p data-source-line="69">如需获得来自服务器的响应，请使用 XMLHttpRequest 对象的 responseText 或 responseXML 属性。</p>
+<ol data-source-line="70">
+<li>responseText:获得字符串形式的响应数据。</li>
+<li>responseXML: 获得 XML 形式的响应数据。</li>
+</ol>
+<h3 id="5-onreadystatechange-事件" data-source-line="73"><a class="markdownIt-Anchor" href="#5-onreadystatechange-事件"></a>5. onreadystatechange 事件</h3>
+<h4 id="onreadystatechange-事件" data-source-line="74"><a class="markdownIt-Anchor" href="#onreadystatechange-事件"></a>onreadystatechange 事件</h4>
+<p data-source-line="75">当请求被发送到服务器时，我们需要执行一些基于响应的任务。</p>
+<p data-source-line="77">每当 readyState 改变时，就会触发 onreadystatechange 事件。</p>
+<p data-source-line="79">readyState 属性存有 XMLHttpRequest 的状态信息。</p>
+<p data-source-line="81">下面是 XMLHttpRequest 对象的三个重要的属性：</p>
+<ol data-source-line="82">
+<li>
+<p>onreadystatechange:存储函数（或函数名），每当 readyState 属性改变时，就会调用该函数。</p>
+</li>
+<li>
+<p>readyState:</p>
+<p>存有 XMLHttpRequest 的状态。从 0 到 4 发生变化。</p>
+<ul>
+<li>0: 请求未初始化</li>
+<li>1: 服务器连接已建立</li>
+<li>2: 请求已接收</li>
+<li>3: 请求处理中</li>
+<li>4: 请求已完成，且响应已就绪</li>
+</ul>
+</li>
+<li>
+<p>status</p>
+<ul>
+<li>200: "OK"</li>
+<li>404: 未找到页面</li>
+<li>200：服务器响应正常。</li>
+<li>304：该资源在上次请求之后没有任何修改（这通常用于浏览器的缓存机制，使用GET请求时尤其需要注意）。</li>
+<li>400：无法找到请求的资源。</li>
+<li>401：访问资源的权限不够。</li>
+<li>403：没有权限访问资源。</li>
+<li>404：需要访问的资源不存在。</li>
+<li>405：需要访问的资源被禁止。</li>
+<li>407：访问的资源需要代理身份验证。</li>
+<li>414：请求的URL太长。</li>
+<li>500：服务器内部错误。</li>
+</ul>
+</li>
+</ol>
+<p data-source-line="106"><strong>Ajax:</strong></p>
+<pre data-source-line="108"><code class="hljs"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadXMLDoc</span>(<span class="hljs-params"></span>)
+            </span>{
+            	<span class="hljs-keyword">var</span> xmlhttp;
+            	<span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.XMLHttpRequest)
+            	{
+            		<span class="hljs-comment">//  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码</span>
+            		xmlhttp=<span class="hljs-keyword">new</span> XMLHttpRequest();
+            	}
+            	<span class="hljs-keyword">else</span>
+            	{
+            		<span class="hljs-comment">// IE6, IE5 浏览器执行代码</span>
+            		xmlhttp=<span class="hljs-keyword">new</span> ActiveXObject(<span class="hljs-string">"Microsoft.XMLHTTP"</span>);
+            	}
+            	xmlhttp.onreadystatechange=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)
+            	</span>{
+            		<span class="hljs-keyword">if</span> (xmlhttp.readyState==<span class="hljs-number">4</span> &amp;&amp; xmlhttp.status==<span class="hljs-number">200</span>)
+            		{
+            			<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"myDiv"</span>).innerHTML=xmlhttp.responseText;
+            		}
+            	}
+            	xmlhttp.open(<span class="hljs-string">"GET"</span>,<span class="hljs-string">"/try/ajax/ajax_info.txt"</span>,<span class="hljs-literal">true</span>);
+            	xmlhttp.send();
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"myDiv"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>使用 AJAX 修改该文本内容<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"loadXMLDoc()"</span>&gt;</span>修改内容<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre><p data-source-line="147"><strong>XMLHttpRequest对象主要方法:</strong></p>
+<pre data-source-line="149"><code class="hljs"><span class="hljs-number">1.</span> <span class="hljs-literal">void</span> open(<span class="hljs-built_in">String</span> method,<span class="hljs-built_in">String</span> url,Boolen async)   
+   用于创建请求    
+   参数：
+       method： 请求方式（字符串类型），如：POST、GET、DELETE<span class="hljs-params">...</span>
+       url：    要请求的地址（字符串类型）
+       async：  是否异步（布尔类型）
+ 
+<span class="hljs-number">2.</span> <span class="hljs-literal">void</span> send(<span class="hljs-built_in">String</span> body)
+    用于发送请求
+    参数：
+        body： 要发送的数据（字符串类型） 
+
+<span class="hljs-number">3.</span> <span class="hljs-literal">void</span> setRequestHeader(<span class="hljs-built_in">String</span> <span class="hljs-keyword">header</span>,<span class="hljs-built_in">String</span> value)
+    用于设置请求头
+    参数：
+        <span class="hljs-keyword">header</span>： 请求头的key（字符串类型）
+        vlaue：  请求头的value（字符串类型）
+ 
+<span class="hljs-number">4.</span> <span class="hljs-built_in">String</span> getAllResponseHeaders()
+    获取所有响应头
+    返回值：
+        响应头数据（字符串类型）
+ 
+<span class="hljs-number">5.</span> <span class="hljs-built_in">String</span> getResponseHeader(<span class="hljs-built_in">String</span> <span class="hljs-keyword">header</span>)
+    获取响应头中指定<span class="hljs-keyword">header</span>的值
+    参数：
+        <span class="hljs-keyword">header</span>： 响应头的key（字符串类型）
+    返回值：
+        响应头中指定的<span class="hljs-keyword">header</span>对应的值
+ 
+<span class="hljs-number">6.</span> <span class="hljs-literal">void</span> <span class="hljs-keyword">abort</span>()
+    终止请求</code></pre><p data-source-line="182"><strong>XMLHttpRequest对象主要属性:</strong></p>
+<pre data-source-line="184"><code class="hljs"><span class="hljs-number">1.</span> Number readyState
+   状态值（整数），可以确定请求/响应过程的当前活动阶段
+
+    <span class="hljs-number">0</span>：未初始化。未调用open()方法
+    <span class="hljs-number">1</span>：启动。已经调用open()方法，未调用send()方法
+    <span class="hljs-number">2</span>：发送。已经调用send()方法，未接收到响应
+    <span class="hljs-number">3</span>：接收。已经接收到部分数据
+    <span class="hljs-number">4</span>：完成。已经接收到全部数据，可以在客户端使用
+
+
+<span class="hljs-number">2.</span> Function onreadystatechange                当readyState的值改变时自动触发执行其对应的函数（回调函数）
+
+<span class="hljs-number">3.</span> String responseText                        作为响应主体被返回的文本（字符串类型）
+
+<span class="hljs-number">4.</span> XmlDocument responseXML                    服务器返回的数据（Xml对象） 
+
+<span class="hljs-number">5.</span> Number states                              状态码（整数），如：<span class="hljs-number">200</span>、<span class="hljs-number">404.</span>.. 
+
+<span class="hljs-number">6.</span> String statesText                          状态文本（字符串），如：OK、NotFound...</code></pre><h2 id="ajax伪造" data-source-line="206"><a class="markdownIt-Anchor" href="#ajax伪造"></a>Ajax伪造</h2>
+<p data-source-line="208">iframe就是我们常用的iframe标签：&lt;iframe&gt;。iframe标签是
+框架的一种形式，也比较常用到，iframe一般用来包含别的页面，例如我们可以在我们自己的网站页面加载别人网站或者本站其他页面的内容。iframe
+标签的最大作用就是让页面变得美观。iframe标签的用法有很多，主要区别在于对iframe标签定义的形式不同，例如定义iframe的长宽高。</p>
+<p data-source-line="210">因此，iframe标签具有局部加载内容的特性，所以可以使用其来伪造Ajax请求。</p>
+<p data-source-line="212">原理是这样的，设置一个提交按钮，再设置一个输入框，当我们输入一个网址的时候，在当前的页面加载输入网址的页面信息，呈现在iframe框里，这样就能做到不刷新URL来提交不同的信息。</p>
+<pre data-source-line="214"><code class="hljs"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>伪造AJAX<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>请输入要加载的地址：<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"currentTime"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"提交"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"LoadPage();"</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>加载页面位置：<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"iframePosition"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"width: 100%;height: 500px;"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span>&gt;</span><span class="javascript">
+            <span class="hljs-built_in">window</span>.onload= <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                <span class="hljs-keyword">var</span> myDate = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'currentTime'</span>).innerText = myDate.getTime();
+ 
+            };
+            <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">LoadPage</span>(<span class="hljs-params"></span>)</span>{
+                <span class="hljs-keyword">var</span> targetUrl =  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'url'</span>).value;
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"iframePosition"</span>).src = targetUrl;
+            }
+        </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre><h2 id="jquery-ajax" data-source-line="246"><a class="markdownIt-Anchor" href="#jquery-ajax"></a>jquery ajax</h2>
+<p data-source-line="248">jQuery 提供多个与 AJAX 有关的方法。</p>
+<p data-source-line="250">通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON - 同时您能够把这些外部数据直接载入网页的被选元素中。</p>
+<ul data-source-line="252">
+<li>jQuery 不是生产者，而是大自然搬运工。</li>
+<li>jQuery Ajax本质 XMLHttpRequest 或 ActiveXObject</li>
+<li>注：2.+版本不再支持IE9以下的浏览器</li>
+</ul>
+<pre data-source-line="257"><code class="hljs"><span class="hljs-number">1</span>. jQuery.<span class="hljs-built_in">get</span>(...)
+       所有参数：
+              ur<span class="hljs-variable">l:</span> 待载入页面的URL地址
+             dat<span class="hljs-variable">a:</span> 待发送 Key/value 参数。
+          succes<span class="hljs-variable">s:</span> 载入成功时回调函数。
+         dataType: 返回内容格式，xml, json,  script, text, html
+
+<span class="hljs-number">2</span>.jQuery.post(...)
+       所有参数：
+              ur<span class="hljs-variable">l:</span> 待载入页面的URL地址
+             dat<span class="hljs-variable">a:</span> 待发送 Key/value 参数
+          succes<span class="hljs-variable">s:</span> 载入成功时回调函数
+         dataType: 返回内容格式，xml, json,  script, text, html
+
+<span class="hljs-number">3</span>.jQuery.getJSON(...)
+       所有参数：
+              ur<span class="hljs-variable">l:</span> 待载入页面的URL地址
+             dat<span class="hljs-variable">a:</span> 待发送 Key/value 参数。
+          succes<span class="hljs-variable">s:</span> 载入成功时回调函数。
+
+<span class="hljs-number">4</span>.jQuery.getScript(...)
+       所有参数：
+              ur<span class="hljs-variable">l:</span> 待载入页面的URL地址
+             dat<span class="hljs-variable">a:</span> 待发送 Key/value 参数。
+          succes<span class="hljs-variable">s:</span> 载入成功时回调函数。
+
+<span class="hljs-number">5</span>.jQuery.ajax(...)
+       部分参数：
+              url：请求地址
+             <span class="hljs-built_in">type</span>：请求方式，GET、POST（<span class="hljs-number">1.9</span>.<span class="hljs-number">0</span>之后用method）
+          headers：请求头
+             data：要发送的数据
+      contentType：即将发送信息至服务器的内容编码类型(默认: <span class="hljs-string">"application/x-www-form-urlencoded; charset=UTF-8"</span>)
+            async：是否异步
+          timeout：设置请求超时时间（毫秒）
+       beforeSend：发送请求前执行的函数(全局)
+         <span class="hljs-built_in">complete</span>：完成之后执行的回调函数(全局)
+          success：成功之后执行的回调函数(全局)
+            error：失败之后执行的回调函数(全局)
+          accepts：通过请求头发送给服务器，告诉服务器当前客户端课接受的数据类型
+         dataType：将服务器端返回的数据转换成指定类型
+            <span class="hljs-string">"xml"</span>: 将服务器端返回的内容转换成xml格式
+           <span class="hljs-string">"text"</span>: 将服务器端返回的内容转换成普通文本格式
+           <span class="hljs-string">"html"</span>: 将服务器端返回的内容转换成普通文本格式，在插入DOM中时，如果包含JavaScript标签，则会尝试去执行。
+         <span class="hljs-string">"script"</span>: 尝试将返回值当作JavaScript去执行，然后再将服务器端返回的内容转换成普通文本格式
+           <span class="hljs-string">"json"</span>: 将服务器端返回的内容转换成相应的JavaScript对象
+          <span class="hljs-string">"jsonp"</span>: JSONP 格式使用 JSONP 形式调用函数时，如 <span class="hljs-string">"myurl?callback=?"</span> jQuery 将自动替换 ? 为正确的函数名，以执行回调函数</code></pre><p data-source-line="305"><strong>Jq ajax:</strong></p>
+<pre data-source-line="307"><code class="hljs"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"XmlSendRequest();"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">'Ajax请求'</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"jquery-1.12.4.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">JXmlSendRequest</span>(<span class="hljs-params"></span>)</span>{
+            $.ajax({
+                <span class="hljs-attr">url</span>: <span class="hljs-string">"http://c2.com:8000/test/"</span>,    <span class="hljs-comment">// 访问url地址</span>
+                type: <span class="hljs-string">'GET'</span>,                        <span class="hljs-comment">// get方式提交</span>
+                dataType: <span class="hljs-string">'text'</span>,　　　　　　　　　　  <span class="hljs-comment">// 数据类型</span>
+                success: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data, statusText, xmlHttpRequest</span>)</span>{  <span class="hljs-comment">// 成功后返回的结果</span>
+                    <span class="hljs-built_in">console</span>.log(data);
+                }
+            })
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></article>
+
+
+</body></html>
